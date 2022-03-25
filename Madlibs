@@ -1,0 +1,54 @@
+def terms():
+    global noun, noun2, adjective, adjective2, plural_noun, body_part, number, place, verb
+    noun  =  input("Enter a noun: ")
+    noun2 = input("Enter another noun: ")
+    adjective = input("Enter an adjective: ")
+    adjective2 = input("Enter another adjective: ")
+    plural_noun = input("Enter a plural noun: ")
+    body_part = input("Enter a body part: ")
+    number = input("Enter a number: ")
+    place = input("Enter a place: ")
+    verb = input("Enter a verb ending in 'ing': ")
+
+def story_one():
+    terms()
+    print("Welcome to the corndog story!")
+    print(f"Once upon a time an individual named {noun} decided to go {verb}. Little did {noun} know, {noun} found a hot dog stand. \
+Without hesitation, {noun} immediately rushed over to it and began throwing punches at the {plural_noun}. After the brawl, {noun}'s \
+{body_part} started to bruise and wane in power. Nonetheless, {noun} asked the hot dog stand clerk for {number} {adjective} hot dogs. \
+The clerk then handed {noun}'s hot dogs and {noun} proceeded to say, 'Just tried a corndog for the first time...Man God Bless America!\
+😂😂 #ForReaL. Afterwards, {noun} flew to the {adjective2} {place}, found more opportunities to go {verb}, and destroyed {noun2}.")
+
+def story_two():
+    terms()
+    print("Welcome to the goober story!")
+    print(f"EEEEYA! This is the exact words of my friend named {noun2}. {noun} is a real {adjective} goober that's always {verb} \
+{plural_noun} without remorse. 'Give me {number} days and I will totally get to {place}!' {noun2} says. EEEYA! To be frankly honest, I \
+doubt {noun}'s {body_part} will have the capacity to execute {noun}'s grand and {adjective2} plan. EEEYA! EEEEEEYA! I am a goober and I will \
+always be a part of the {plural_noun}, but the next time I catch {noun} {verb} I will not hold back.")
+
+def story_three():
+    terms()
+    print("Welcome to the enchanted story!")
+    print(f"Such astounding beauty! Never could I have ever imagined {verb} in this glorious state of mind! Oh {noun2}, of what \
+bountiful occasion occurred for me to be coveted by the all so mighty {plural_noun}! Goober goober goober. Anyways, I managed to \
+catch {noun} freaking out and {verb} in the room adjacent to mine. How on {place} did I catch this? I would sacrifice my very own \
+{body_part} to prove my case! EEEEYA! I have {number} reasons why I want to find {noun} so that I can surround {noun} with lots of \
+{plural_noun}. How could anyone be this {adjective}? SOMEONE PLEASE ANSWER ME! {adjective2} {adjective2} {adjective2} {adjective2}. EEEYA!")
+
+while True:
+    story_option = input("Which story would you like to play? Enter the number of the story (1, 2, or 3) or type q to quit ")
+    if story_option == "1":
+        story_one()
+        break
+    elif story_option == "2":
+        story_two()
+        break
+    elif story_option == "3":
+        story_three()
+        break
+    elif story_option == "q":
+        print("You are now quitting the Madlib")
+        quit()
+    else:
+        print("Invalid response, choose again!")
