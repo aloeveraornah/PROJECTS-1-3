@@ -1,4 +1,4 @@
-#this function asks the users for variable inputs
+#this function asks the users for variable inputs and makes them global
 def terms():
     global noun, noun2, adjective, adjective2, plural_noun, body_part, number, place, verb
     noun  =  input("Enter a noun: ")
@@ -11,7 +11,7 @@ def terms():
     place = input("Enter a place: ")
     verb = input("Enter a verb ending in 'ing': ")
 
-#this function is for story one
+#this function is for story one and calls the function possessing the terms
 def story_one():
     terms()
     print("Welcome to the corndog story!")
@@ -21,7 +21,7 @@ Without hesitation, {noun} immediately rushed over to it and began throwing punc
 The clerk then handed {noun}'s hot dogs and {noun} proceeded to say, 'Just tried a corndog for the first time...Man God Bless America!\
 😂😂 #ForReaL. Afterwards, {noun} flew to the {adjective2} {place}, found more opportunities to go {verb}, and destroyed {noun2}.")
 
-#this function is for story two
+#this function is for story two and calls the function possessing the terms
 def story_two():
     terms()
     print("Welcome to the goober story!")
@@ -30,7 +30,7 @@ def story_two():
 doubt {noun}'s {body_part} will have the capacity to execute {noun}'s grand and {adjective2} plan. EEEYA! EEEEEEYA! I am a goober and I will \
 always be a part of the {plural_noun}, but the next time I catch {noun} {verb} I will not hold back.")
 
-#this function is for story three
+#this function is for story three and calls the function possessing the terms
 def story_three():
     terms()
     print("Welcome to the enchanted story!")
