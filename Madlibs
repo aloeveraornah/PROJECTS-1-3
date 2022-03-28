@@ -40,7 +40,6 @@ catch {noun} freaking out and {verb} in the room adjacent to mine. How on {place
 {body_part} to prove my case! EEEEYA! I have {number} reasons why I want to find {noun} so that I can surround {noun} with lots of \
 {plural_noun}. How could anyone be this {adjective}? SOMEONE PLEASE ANSWER ME! {adjective2} {adjective2} {adjective2} {adjective2}. EEEYA!")
 
-
 #a while loop used to assure that the users' input is a valid response
 while True:
     story_option = input("Which story would you like to play? Enter the number of the story (1, 2, or 3) or type q to quit ")
