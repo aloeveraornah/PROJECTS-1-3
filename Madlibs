@@ -1,3 +1,4 @@
+#this function asks the users for variable inputs
 def terms():
     global noun, noun2, adjective, adjective2, plural_noun, body_part, number, place, verb
     noun  =  input("Enter a noun: ")
@@ -10,6 +11,7 @@ def terms():
     place = input("Enter a place: ")
     verb = input("Enter a verb ending in 'ing': ")
 
+#this function is for story one
 def story_one():
     terms()
     print("Welcome to the corndog story!")
@@ -19,6 +21,7 @@ Without hesitation, {noun} immediately rushed over to it and began throwing punc
 The clerk then handed {noun}'s hot dogs and {noun} proceeded to say, 'Just tried a corndog for the first time...Man God Bless America!\
 😂😂 #ForReaL. Afterwards, {noun} flew to the {adjective2} {place}, found more opportunities to go {verb}, and destroyed {noun2}.")
 
+#this function is for story two
 def story_two():
     terms()
     print("Welcome to the goober story!")
@@ -27,6 +30,7 @@ def story_two():
 doubt {noun}'s {body_part} will have the capacity to execute {noun}'s grand and {adjective2} plan. EEEYA! EEEEEEYA! I am a goober and I will \
 always be a part of the {plural_noun}, but the next time I catch {noun} {verb} I will not hold back.")
 
+#this function is for story three
 def story_three():
     terms()
     print("Welcome to the enchanted story!")
@@ -36,6 +40,8 @@ catch {noun} freaking out and {verb} in the room adjacent to mine. How on {place
 {body_part} to prove my case! EEEEYA! I have {number} reasons why I want to find {noun} so that I can surround {noun} with lots of \
 {plural_noun}. How could anyone be this {adjective}? SOMEONE PLEASE ANSWER ME! {adjective2} {adjective2} {adjective2} {adjective2}. EEEYA!")
 
+
+#a while loop used to assure that the users' input is a valid response
 while True:
     story_option = input("Which story would you like to play? Enter the number of the story (1, 2, or 3) or type q to quit ")
     if story_option == "1":
