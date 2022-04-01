@@ -1,0 +1,47 @@
+import random
+def computer_guess(max):
+    random_first_number = random.randint(1, 100)
+    first = random_first_number
+    last = max
+    attempt = " "
+    user_intel = int(input(f"Based on your own intel numeral between numbers {random_first_number} and {last}, enter your intel numeral and \
+the A.I will try to match it: "))
+    while attempt != "exact":
+        if first != max:
+            intel = random.randint(first, last)
+        else:
+            intel = first
+        attempt = input(f"The A.I has deduced its own intel numeral. If {intel} is greater than your numeral, type 'great'. \
+If {intel} is lesser than your numeral, type 'less'. Or if {intel} matches it, type 'exact': ")
+        if attempt == "great":
+            last = intel-1
+        elif attempt == "less":
+            first = intel+1
+    print(f"Great, your intel numeral {attempt} matches the A.I's")
+
+def user_guess(max):
+    first = random.randint(1, 100)
+    last = max
+    computer_number = random.randint(first, last)
+    attempt = 0
+    while computer_number != attempt:
+        attempt = int(input(f"Enter your intel numeral in between {first} and {last} to see if your intel numeral matches what the A.I has deduced:  "))
+        if attempt <  computer_number:
+            print("Your intel numeral does not match as it is lesser than the A.I's numeral, try again")
+        elif attempt > computer_number:
+            print("Your intel numeral does not match as it is greater than the A.I's numeral, try again")
+    print(f"Great, the A.I's intel numeral matches yours of value {attempt}")
+
+while True:
+    game_choice = input("Which game would you like to play? Enter 'you' for user guess, 'ai' for computer guess, or type q to quit: ")
+    if game_choice == "you":
+        user_guess(100)
+        break
+    elif game_choice == "ai":
+        computer_guess(100)
+        break
+    elif game_choice == "q":
+        print("You are now quitting the game")
+        quit()
+    else:
+        print("Invalid response, please try again")
