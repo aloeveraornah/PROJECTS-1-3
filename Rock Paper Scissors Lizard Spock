@@ -1,18 +1,14 @@
 import random
 wins = 0
-
 def competition():
     users_strike = input("Type either 'r' for rock, 'p' for paper, 's' for scissors, 'l' for lizard or sp for Spock: ")
     computers_attack = random.choice(["r", "p", "s", "l", "sp"])
-
     if users_strike == computers_attack:
         return "EVEN TRADE!!! NO FUN!!!"
-
     if victory(users_strike, computers_attack):
         global wins
         wins = wins + 1
         return "YOU HAVE VANQUISHED THE DROID!!!"
-
     else:
         return "YOU LOST, HOW DOES IT FEEL!!!"
 
@@ -28,12 +24,10 @@ while True:
     choose_game = input("Would you like to play Rock Paper Scissors Lizard Spock? Type 'p' to play or 'q' to quit: ")
     if choose_game == "p":
         print(competition())
-
     elif choose_game == "q":
         count = wins
         print(f"You have won {count} time(s) in total!")
         print("You are now quitting the game")
         quit()
-
     else:
         print("Invalid response, please try again")
