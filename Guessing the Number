@@ -44,4 +44,4 @@ while True:
         print("You are now quitting the game")
         quit()
     else:
-        print("Invalid response, please try again")
+        print("Invalid response, choose again")
