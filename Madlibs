@@ -19,7 +19,7 @@ def story_one():
 Without hesitation, {noun} immediately rushed over to it and began throwing punches at the {plural_noun}. After the brawl, {noun}'s \
 {body_part} started to bruise and wane in power. Nonetheless, {noun} asked the hot dog stand clerk for {number} {adjective} hot dogs. \
 The clerk then handed {noun}'s hot dogs and {noun} proceeded to say, 'Just tried a corndog for the first time...Man God Bless America!\
-😂😂 #ForReaL. Afterwards, {noun} flew to the {adjective2} {place}, found more opportunities to go {verb}, and destroyed {noun2}.")
+😂😂 #ForReaL'. Afterwards, {noun} flew to the {adjective2} {place}, found more opportunities to go {verb}, and destroyed {noun2}.")
 
 #this function is for story two and calls the function possessing the terms
 def story_two():
